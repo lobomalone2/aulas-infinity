@@ -6,36 +6,36 @@ candidatos = {
 
 
 print(candidatos)
-# voto = ''
-# print('Candidatos disponíveis: ')
+voto = ''
+print('Candidatos disponíveis: ')
 
-# for cand in candidatos.keys():
-#     print(f'Candidato: {cand}')
+for cand in candidatos.keys():
+    print(f'Candidato: {cand}')
 
 
-# while True:
+while True:
     
-#     voto = input('Digite um candidato pra votar')
+    voto = input('Digite um candidato pra votar')
 
-#     if voto == 'sair':
-#         print('Encerrando votação')
-#         break
+    if voto == 'sair':
+        print('Encerrando votação')
+        break
 
-#     candidatos[voto]['votos'] += 1
-
-
-# for cand, votos in candidatos.items():
-#     memoria = []
-
-#     for valor in votos.values():
-#         memoria.append(valor)
+    candidatos[voto]['votos'] += 1
 
 
-#     print(f'Candidato {cand} - votos: {memoria[0]} ')
+for cand, votos in candidatos.items():
+    memoria = []
+
+    for valor in votos.values():
+        memoria.append(valor)
+
+
+    print(f'Candidato {cand} - votos: {memoria[0]} ')
 
 
 
-# # Pesquisar uma biblioteca em python que gera um PDF com base em relatórios
+# Pesquisar uma biblioteca em python que gera um PDF com base em relatórios
 
     
 
