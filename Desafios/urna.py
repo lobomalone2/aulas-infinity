@@ -1,3 +1,40 @@
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Table
+import os
+
+
+
+def criarpdf(dados):
+    
+    # Criar o canvas
+    caminho = os.path.join(os.getcwd(),'Resultado_votação.pdf')
+
+    c = canvas.Canvas('Resultado_votação.pdf', pagesize=A4)
+    c.setFont('Helvetica', 12)
+    c.drawString(100,750,'Resultado da votação!!')
+    c.setFont('Helvetica-Bold', 12)
+    c.save() # Salvar o canvas antes de criar o SimpleDocTemplate
+
+    # Preparar os dados da tabela
+    data = [['NOME','VOTOS']]
+
+    for nome, votos in dados.items():
+
+        data.append([nome,votos]) 
+
+    # Criar o documento PDF
+
+    pdf = SimpleDocTemplate('Resultado_votação.pdf', pagesize=A4)
+    tabela = Table(data)
+
+     # Construir o PDF com a tabela
+
+    pdf.build([tabela])
+
+    print(f'O pdf foi salvo em: {caminho}')
+
+                                                                                                                    
 candidatos = {
     'A': {'votos': 0 },
     'B': {'votos': 0 },
@@ -66,6 +103,9 @@ for cand, votos in candidatos.items():
         percentual = 0
 
     print(f'Candidato A {cand} -  {percentual:.2f} % ')
+
+
+criarpdf(candidatos)
 
         
 
