@@ -102,7 +102,7 @@ for cand, votos in candidatos.items():
         print('')
         percentual = 0
 
-    print(f'Candidato A {cand} -  {percentual:.2f} % ')
+    print(f'Candidato {cand} -  {percentual:.2f} % ')
 
 
 criarpdf(candidatos)
