@@ -7,7 +7,7 @@ def tabuada(numero: int):
 numeroescolhido = int(input('Digite o numero a ser calculada a tabuada'))
 
 
-print(f'O resultado é {tabuada(numeroescolhido)}')
+print(f'O resultado é {tabuada(numeroescolhido)}')ddd
 
 
 
