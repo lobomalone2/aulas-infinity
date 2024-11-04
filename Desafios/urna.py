@@ -20,15 +20,22 @@ def criarpdf(dados):
     data = [['NOME','VOTOS']]
 
     for nome, votos in dados.items():
+        data.append([nome,votos])
 
-        data.append([nome,votos]) 
+        for votos in votos.values():
+            
+            print(f'Votos: {votos}')
+
+            
+
+         
 
     # Criar o documento PDF
 
     pdf = SimpleDocTemplate('Resultado_votação.pdf', pagesize=A4)
     tabela = Table(data)
 
-     # Construir o PDF com a tabela
+    # Construir o PDF com a tabela
 
     pdf.build([tabela])
 
