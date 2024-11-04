@@ -10,6 +10,7 @@ def criarpdf(dados):
     # Criar o canvas
     caminho = os.path.join(os.getcwd(),'Resultado_votação.pdf')
 
+ 
     c = canvas.Canvas('Resultado_votação.pdf', pagesize=A4)
     c.setFont('Helvetica', 12)
     c.drawString(100,750,'Resultado da votação!!')
@@ -22,9 +23,6 @@ def criarpdf(dados):
     for nome, votos in dados.items():
         data.append([nome,votos])
 
-        for votos in votos.values():
-            
-            print(f'Votos: {votos}')
 
             
 
