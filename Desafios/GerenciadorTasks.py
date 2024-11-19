@@ -14,7 +14,7 @@ def adicionar_tarefa(descricao_informada: str):
 
 def listar_tarefas(lista_de_tarefas: list):
 
-    for indice, tarefa in enumerate(lista_de_tarefas, start=1):
+    for indice, tarefa in enumerate(lista_de_tarefas):
 
         print(f"[{indice}] {tarefa['descricao']} - {tarefa['status']}")
 
@@ -35,7 +35,7 @@ def remover_tarefa(codigotarefa: int, listar_tarefas: list):
      
     tarefas.pop(codigotarefa)
 
-    for indice, tarefa in enumerate(listar_tarefas, start=1):
+    for indice, tarefa in enumerate(listar_tarefas):
 
         print(f'[{indice}] {tarefa['descricao']} - {tarefa['status']}')
 
