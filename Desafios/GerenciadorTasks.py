@@ -40,6 +40,7 @@ def remover_tarefa(codigotarefa: int, listar_tarefas: list):
         print(f'[{indice}] {tarefa['descricao']} - {tarefa['status']}')
 
 
+
 # PROGRAMA PRINCIPAL
 
 
@@ -51,23 +52,74 @@ tarefas = [
 
 ]
 
-#Adicionar tarefa
 
-descricao = input('Digite a descrição da tarefa')
+while True:
+     
+     print(' Vamos lá, escolha uma das opções abaixo! \n [1] Adicionar uma tarefa. \n [2] Listar tarefas. \n [3] Marcar tarefa como concluída. \n [4] Remover tarefa. \n [5] Sair do programa')
 
-adicionar_tarefa(descricao)
+     escolhausuario = int(input(' ----> '))
+
+        # Adicionar tarefa
+
+     if escolhausuario == 1:
+
+        descricao = input('Digite a descrição da tarefa')
+
+        adicionar_tarefa(descricao)
+
+        # listar tarefa
+
+     elif escolhausuario == 2:
+          
+          listar_tarefas(tarefas)
+
+        # marcar tarefa como concluída
+
+     elif escolhausuario == 3:
+          
+          tarefaconcluida = int(input('Digite o numero da tarefa que voce concluiu'))
+          marcar_concluida(tarefaconcluida,tarefas)
+
+        # Remover tarefa
+
+     elif escolhausuario == 4:
+           
+           remover = int(input('Digite o numero da tarefa a ser removida!'))
+           remover_tarefa(remover,tarefas)
+
+        # Encerrar programa
+        
+     elif escolhausuario == 5:
+          
+          break
+     
+     else:
+          
+          print('Opção inválida, tente novamente!')
+
+          
+          
+
+             
+
+          
 
 
-# listar tarefa
-listar_tarefas(tarefas)
 
-#marcar tarefa como concluída
 
-tarefaconcluida = int(input('Digite o numero da tarefa que voce concluiu'))
-marcar_concluida(tarefaconcluida,tarefas)
+
+
+
+
+
+
+
+
+
+
+
 
 # remover tarefas
 
-remover = int(input('Digite o numero da tarefa a ser removida!'))
 
-remover_tarefa(remover,tarefas)
+
