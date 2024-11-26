@@ -88,38 +88,14 @@ while True:
            remover_tarefa(remover,tarefas)
 
         # Encerrar programa
-        
-     elif escolhausuario == 5:
-          
+
+     elif escolhausuario == 5:          
           break
      
      else:
           
           print('Opção inválida, tente novamente!')
 
-          
-          
-
-             
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# remover tarefas
-
+        
 
 
