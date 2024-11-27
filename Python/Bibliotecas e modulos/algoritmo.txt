@@ -1,0 +1,10 @@
+Crie uma calculadora  que faça calculos simples operador
+
+1° passo: criar as funções para calcular adição, subtração, multiplicação e divisão
+2° passo: Solicitar ao usuário qual tipo de operação ele quer fazer
+3° passo: Coletar os valores da operação
+4° passo: Estrutura condicional para cada operador
+5° passo: Criar função menu que verifica o operador escolhido pelo usuário
+6° passo: Criar um laço de repetição que só encerra o programa quando o usuario digitar 'sair'
+
+

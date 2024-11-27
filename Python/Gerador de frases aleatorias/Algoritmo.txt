@@ -1,0 +1,7 @@
+1° passo: Criar as estruturas de dados que serão utilizadas no programa
+2° passo: Criar uma estrutura de frases para cada categoria
+3° passo:
+4° passo:
+5° passo:
+6° passo:
+7° passo:
