@@ -77,9 +77,6 @@ def criarfrase_tecnologia():
 
 
 
-
-
-
 # PROGRAMA PRINCIPAL
 
 CodigoFrase = [{'categorias':

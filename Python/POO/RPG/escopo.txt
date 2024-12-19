@@ -1,0 +1,20 @@
+1° ESTAPA: #FINALIZADA
+*Criar classe NPC com os seguintes atributos: nome,dano,defesa,stamina com valor padrão de 200 e hp com valor padrão de 100
+*Criar método chute que altera os atributos do personagem -10 defesa +15 dano -5 stamina quando chamado através do comando
+*Criar método soco  que altera os atributos do personagem -2 defesa +6 dano -5 stamina quando chamado através do comando
+*Criar método cotovelada que altera os atributos do personagem -1 defesa +18 dano -4 stamina quando chamado através do comando
+*Criar método bloqueio  que altera os atributos do personagem + 10 defesa -3.5 dano -1 stamina quando chamado através do comando
+*Criar método esquiva que altera o atributo stamina -1
+*Criar método descansar que a cada 3 segundos recupera +30 de stamina
+
+
+
+2° ETAPA:
+Criar função menuprincipal() que o usuário decide iniciar combate ou sair do jogo
+
+3° ETAPA:
+Criar função menucombate() que o usuário terá a opção de escolher qual das ações disponíveis no objeto personagem que terá como atribuição
+a classe NPC, ele irá executar
+
+4° ETAPA:
+Criar função computadorcombate() utilizando a biblioteca random, onde o programa irá escolher uma das ações aleatóriamente
