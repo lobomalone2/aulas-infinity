@@ -8,6 +8,8 @@ class Produto:
         print(f'Produto: {self.nome}, Preço: {self.preco}, Quantidade em estoque: {self.quantidade}')
 
 
-Produto1 = Produto()
+Produto1 = Produto('Lucas Lobo','200','20')
+
+Produto1.exibir_informacoes()
 
         
