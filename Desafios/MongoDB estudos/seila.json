@@ -1,0 +1,44 @@
+{
+    "marca": "Volkswagen",
+    "modelo": "Golf GTI",
+    "ano": 2023,
+    "cor": "Vermelho Tornado",
+    "motor": {
+      "tipo": "2.0 TSI",
+      "cilindros": 4,
+      "potencia": 245,
+      "torque": 37.7
+    },
+    "transmissao": {
+      "tipo": "Automática DSG",
+      "marchas": 7
+    },
+    "desempenho": {
+      "aceleracao_0_100": 6.2,
+      "velocidade_maxima": 250
+    },
+    "consumo": {
+      "cidade": 10.5,
+      "estrada": 14.5
+    },
+    "itens_de_serie": [
+      "Ar condicionado digital Climatronic Touch",
+      "Direção elétrica",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESC)",
+      "Controle de tração (ASR)",
+      "7 airbags",
+      "Central multimídia Discover Media",
+      "Faróis em LED com DRL",
+      "Rodas de liga leve aro 18\"",
+      "Bancos revestidos em couro"
+    ],
+    "opcionais": [
+      "Teto solar panorâmico",
+      "Sistema de som Harman Kardon",
+      "Assistente de estacionamento",
+      "Controle adaptativo de velocidade (ACC)"
+    ],
+      "preco_sugerido": 200000,
+      "combustivel": "Gasolina"
+  }
