@@ -6,7 +6,6 @@ def main(page: ft.Page):
 
     nome = ft.TextField(label="Digite seu nome")
 
-
     email = ft.TextField(label="Digite o email")
 
     mensagem = ft.TextField(label="Digite a mensagem")
